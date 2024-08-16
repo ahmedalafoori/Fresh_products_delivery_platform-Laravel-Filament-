@@ -62,6 +62,7 @@ class CategoriesResource extends Resource
                 Tables\Columns\ImageColumn::make('image')
                     ->label('Image')
                     ->size(50)
+                    ->circular()// لجعل الصورة دائرية إذا رغبت
                     ->extraAttributes(['class' => 'w-20 h-20 object-cover']),
 
                 Tables\Columns\TextColumn::make('created_at')

@@ -26,21 +26,5 @@ class OrderItems extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    protected static function boot()
-    {
-        parent::boot();
 
-        static::saving(function ($item) {
-            if ($item->product_id && $item->quantity) {
-                $product = Products::find($item->product_id);
-                if ($product && $product->prais) {
-                    $item->total_product_price = $item->quantity * $product->prais;
-                } else {
-                    $item->total_product_price = 0;
-                }
-            } else {
-                $item->total_product_price = 0;
-            }
-        });
-    }
 }

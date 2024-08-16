@@ -3,15 +3,14 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\OrderItemsResource\Pages;
-use App\Filament\Resources\OrderItemsResource\RelationManagers;
 use App\Models\OrderItems;
+use App\Models\Products;
+use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class OrderItemsResource extends Resource
 {
@@ -23,21 +22,31 @@ class OrderItemsResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('product_id')
-                    ->numeric(),
-                Forms\Components\TextInput::make('order_id')
-                    ->numeric(),
-                Forms\Components\TextInput::make('user_id')
-                    ->required()
-                    ->numeric(),
+                Forms\Components\Select::make('product_id')
+                    ->label('Product Name')
+                    ->options(Products::all()->pluck('name', 'id'))  // جلب أسماء المنتجات مع معرفاتها
+                    ->required(),
+
+                Forms\Components\Select::make('user_id')
+                    ->label('User Name')
+                    ->options(User::all()->pluck('name', 'id'))  // جلب أسماء المستخدمين مع معرفاتهم
+                    ->required(),
+
+                Forms\Components\TextInput::make('order_id')  // حقل Order ID
+                    ->numeric()
+                    ->required(),
+
                 Forms\Components\TextInput::make('quantity')
                     ->required()
                     ->numeric()
                     ->default(0),
+
                 Forms\Components\TextInput::make('total_product_price')
                     ->required()
                     ->numeric(),
+
                 Forms\Components\DateTimePicker::make('order_delivery_time'),
+
                 Forms\Components\Toggle::make('status')
                     ->required(),
             ]);
@@ -47,30 +56,38 @@ class OrderItemsResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('product_id')
+                Tables\Columns\TextColumn::make('product.name')  // عرض اسم المنتج بدلاً من معرف المنتج
+                    ->label('Product Name')
+                    ->sortable(),
+
+                Tables\Columns\TextColumn::make('order_id')  // عمود Order ID
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('order_id')
-                    ->numeric()
+
+                Tables\Columns\TextColumn::make('user.name')  // عرض اسم المستخدم بدلاً من معرف المستخدم
+                    ->label('User Name')
                     ->sortable(),
-                Tables\Columns\TextColumn::make('user_id')
-                    ->numeric()
-                    ->sortable(),
+
                 Tables\Columns\TextColumn::make('quantity')
                     ->numeric()
                     ->sortable(),
+
                 Tables\Columns\TextColumn::make('total_product_price')
                     ->numeric()
                     ->sortable(),
+
                 Tables\Columns\TextColumn::make('order_delivery_time')
                     ->dateTime()
                     ->sortable(),
+
                 Tables\Columns\IconColumn::make('status')
                     ->boolean(),
+
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+
                 Tables\Columns\TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()

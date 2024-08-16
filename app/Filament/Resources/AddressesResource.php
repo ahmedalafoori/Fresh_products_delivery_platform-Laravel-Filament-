@@ -10,6 +10,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -21,8 +22,10 @@ class AddressesResource extends Resource
 
     public static function form(Form $form): Form
     {
+
         return $form
             ->schema([
+
                 Forms\Components\TextInput::make('name')
                     ->maxLength(255)
                     ->required()
@@ -70,6 +73,7 @@ class AddressesResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
+
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->label('Name')

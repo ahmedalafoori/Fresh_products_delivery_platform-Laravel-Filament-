@@ -11,6 +11,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Tables\Columns\ImageColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -84,10 +85,12 @@ class DeliveryDetailsResource extends Resource
                     ->sortable()
                     ->extraAttributes(['class' => 'whitespace-nowrap text-gray-700']),
 
-                Tables\Columns\TextColumn::make('vehicleimage')
+                // Use ImageColumn to display images directly
+                ImageColumn::make('vehicleimage')
                     ->label('Vehicle Image')
-                    ->html(fn($state) => $state ? '<img src="' . asset('storage/vehicle_images/' . $state) . '" alt="Vehicle Image" style="width: 100px; height: auto;">' : 'No image')
                     ->sortable()
+                    ->circular()// لجعل الصورة دائرية إذا رغبت
+                    // Adjust size as needed
                     ->extraAttributes(['class' => 'whitespace-nowrap']),
 
                 Tables\Columns\TextColumn::make('created_at')

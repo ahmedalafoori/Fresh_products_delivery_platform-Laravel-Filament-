@@ -84,6 +84,7 @@ class FarmsResource extends Resource
 
                 Tables\Columns\ImageColumn::make('image')
                     ->label('Farm Image')
+                    ->circular()// لجعل الصورة دائرية إذا رغبت
                     ->extraAttributes(['class' => 'text-center']),
 
                 Tables\Columns\TextColumn::make('user.name') // Display user name

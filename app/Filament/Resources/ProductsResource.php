@@ -93,8 +93,10 @@ class ProductsResource extends Resource
                 Tables\Columns\TextColumn::make('quantity')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('photo')
-                    ->searchable(),
+                    Tables\Columns\ImageColumn::make('photo')
+                    ->label('Photo')
+                    ->sortable()
+                    ->circular(), // لجعل الصورة دائرية إذا رغبت
                 Tables\Columns\TextColumn::make('category.name') // عرض اسم الفئة
                     ->label('Category')
                     ->searchable()
