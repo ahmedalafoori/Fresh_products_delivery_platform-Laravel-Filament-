@@ -1,67 +1,16 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Fresh_products_delivery_platform-Laravel-Filament-
+![Screenshot (286)](https://github.com/user-attachments/assets/8e1288d7-542a-4087-9459-385a44a772d5)
+![Screenshot (301)](https://github.com/user-attachments/assets/1b8de4c1-fbab-4786-92cc-955fd0f9c97c)
+![Screenshot (300)](https://github.com/user-attachments/assets/bcb72145-08be-4f36-9efc-0bf2a535e695)
+![Screenshot (299)](https://github.com/user-attachments/assets/dceccb39-4bad-4884-9954-69ffe439a6b3)
+![Screenshot (298)](https://github.com/user-attachments/assets/3a060fa7-f48f-443d-8095-6ca7ef3b2185)
+![Screenshot (297)](https://github.com/user-attachments/assets/977211bf-0c3a-498c-9084-11d464c5b6f0)
+![Screenshot (296)](https://github.com/user-attachments/assets/7d1f317c-05ab-4f77-b2f5-4873dce359c8)
+![Screenshot (295)](https://github.com/user-attachments/assets/78b70bf8-80ac-4603-9158-97eb36658f48)
+![Screenshot (294)](https://github.com/user-attachments/assets/be7d57c2-2d67-4b6e-a77c-db6c82bb4753)
+![Screenshot (293)](https://github.com/user-attachments/assets/716f5569-07fa-49ab-9f5c-38681e42fd84)
+![Screenshot (292)](https://github.com/user-attachments/assets/126fec15-a7c7-42cd-a3b9-4a6ed6b0713d)
+![Screenshot (290)](https://github.com/user-attachments/assets/e3075189-816a-4815-ae8c-8acc21cd9329)
+![Screenshot (289)](https://github.com/user-attachments/assets/a7643504-bd4b-48b7-b8a5-f398708500da)
+![Screenshot (287)](https://github.com/user-attachments/assets/2c13d20c-8b59-4eb8-9a90-b96599a1babf)
+![Screenshot (286)](https://github.com/user-attachments/assets/cd22aba3-a3c8-478b-82e8-962fcfec5d34)
+![Screenshot (285)](https://github.com/user-attachments/assets/3ffe0309-15bf-47e8-a2ef-7aedef57cfc8)
